@@ -17,10 +17,7 @@ na2mean(x)
 \value{
 Vector with NA replaced by mean. 
 }
-\references{ }
 \author{ Dominik Reusser}
-\note{}
-\seealso{}
 \examples{
 na2mean(c(1,NA,2))
 na2mean(c(1,NA,NA,2))

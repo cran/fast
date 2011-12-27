@@ -6,7 +6,7 @@
   a time series. 
 }
 \usage{
-sensitivity_rep(data, xval, direction, numberf, order=4, legend = paste("P", 1:order, sep = ""), cukier=TRUE)
+sensitivity_rep(data, xval, direction, numberf, order=4, legend = paste("P", 1:order, sep = ""), cukier=TRUE, reorder = 1:numberf)
 }
 \arguments{
   \item{data}{ Array of data to use of the form todo }
@@ -16,17 +16,12 @@ sensitivity_rep(data, xval, direction, numberf, order=4, legend = paste("P", 1:o
   \item{order}{Order of parameter frequency independence (see Cukier1975)  }
   \item{legend}{ legend text to plot }
   \item{cukier}{ boolean. Indicates wheter to use \code{\link{freq_cukier}}}
-}
-\details{
+  \item{reorder}{A vector of indices that allows to use a different order for the parameters. This is important to check effects of the sampling scheme on results. Use the same as for \code{\link{fast_parameters}}}
 }
 \value{
   An array of sensitivities of the form ... 
 }
-\references{ }
 \author{ Dominik Reusser }
-\note{ 
-
-}
 \seealso{  \code{\link{fast}}, \code{\link{sensitivity}}}
 \examples{
 #The model depends on 4 parameters

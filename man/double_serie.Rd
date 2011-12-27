@@ -27,8 +27,6 @@ double_serie(x)
 }
 \references{ cukier 1978 }
 \author{ Dominik Reusser }
-\note{ 
-}
 \examples{
 x=c(1,2,3,4)
 double_serie(x)

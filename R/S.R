@@ -1,5 +1,5 @@
 `S` <-
-function(m, factor=1,cukier=TRUE, par.names=NULL){
+function(m, factor=1,cukier=TRUE, par.names=NULL, reorder=1:m){
 #calculate the array of S-values
 #usually tabled values from
 #cukier 75 are used
@@ -12,7 +12,7 @@ if(cukier){
 }
 tab<-s(m,factor,cukier) %o% omega
 toreturn <- asin(sin(tab))/pi
-toreturn <- data.frame(toreturn)
+toreturn <- data.frame(toreturn[,reorder])
 if(!is.null(par.names[1]))
    names(toreturn)<- par.names
 return(toreturn)

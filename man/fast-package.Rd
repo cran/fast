@@ -28,6 +28,9 @@ Dominik Reusser
 Maintainer: Dominik Reusser <dreusser@uni-potsdam.de>
 }
 \references{
+Reusser, Dominik E., Wouter Buytaert, and Erwin Zehe. "Temporal dynamics of model parameter sensitivity for computationally expensive models with FAST (Fourier Amplitude Sensitivity Test)." Water Resources Research 47 (2011): W07551.
+
+
 CUKIER, R. I.; LEVINE, H. B. & SHULER, K. E. Non-Linear Sensitivity Analysis Of Multi-Parameter Model Systems Journal Of Computational Physics, 1978 , 26 , 1-42
 
 CUKIER, R. I.; FORTUIN, C. M.; SHULER, K. E.; PETSCHEK, A. G. & SCHAIBLY, J. H. Study Of Sensitivity Of Coupled Reaction Systems To Uncertainties In Rate Coefficients .1. Theory Journal Of Chemical Physics, 1973 , 59 , 3873-3878

@@ -17,15 +17,10 @@ s(m, factor = 1, cukier = TRUE)
   \item{cukier}{ boolean. Indicates wheter to use \code{\link{freq_cukier}}
   or \code{\link{freq_mcrae82}}}
 }
-\details{
-
-}
 \value{
  A vector of equally spaced values between -pi/2 and pi/2
 }
-\references{  }
 \author{ Dominik Reusser }
-\note{ }
 \seealso{\link{fast} }
 \examples{
   s(4)

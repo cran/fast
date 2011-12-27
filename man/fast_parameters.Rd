@@ -7,7 +7,7 @@
   This function generates an array of parameters for the FAST method. 
 }
 \usage{
-fast_parameters(minimum, maximum, names=paste(sep="", "P", 1:NROW(minimum)),factor=1,logscale=rep(FALSE, NROW(minimum)), cukier=TRUE )
+fast_parameters(minimum, maximum, names=paste(sep="", "P", 1:n),factor=1,logscale=rep(FALSE, n), cukier=TRUE, reorder=1:n)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -18,15 +18,12 @@ fast_parameters(minimum, maximum, names=paste(sep="", "P", 1:NROW(minimum)),fact
   \item{logscale}{ A vector of booleans indicating whether a parameter is varied on a logarithmic scale. In this case, minimum and maximum are exponents}
   \item{cukier}{boolean. Indicates wheter to use \code{\link{freq_cukier}}
   or \code{\link{freq_mcrae82}}  }
-}
-\details{
+  \item{reorder}{A vector of indices that allows to use a different order for the parameters. This is important to check effects of the sampling scheme on results}
 }
 \value{
 An array of dimension \code{c(min_number_of_runs, n)}
 }
-\references{ }
 \author{ Dominik Reusser }
-\note{ }
 \seealso{ \code{\link{fast_parameters}} }
 \examples{
 paras<-fast_parameters(minimum=c(0,0,0),maximum=c(1,2,2))

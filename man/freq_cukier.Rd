@@ -20,8 +20,6 @@ freq_mcrae82(m, i = 1, omega_before = 0)
   \item{i}{ Used internally, recursion counter }
   \item{omega_before}{ Used internally, previous frequency. }
 }
-\details{
-}
 \value{
  A vector of independet frequencies to the order of 4.
 }
@@ -31,7 +29,6 @@ McRae, G.; Tilden, J. & Seinfeld, J. Global sensitivity analysis - a computation
 
  }
 \author{ Dominik Reusser }
-\note{ }
 \seealso{ \code{\link{fast}} }
 \examples{
 freq_cukier(5)

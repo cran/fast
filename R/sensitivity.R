@@ -1,11 +1,14 @@
 `sensitivity` <-
-function(x, numberf, order=4,make.plot=FALSE, plot.max=FALSE, include.total.variance=FALSE, plot.main="", cukier=TRUE, names=paste(sep="", "P", 1:numberf)){
+function(x, numberf, order=4,make.plot=FALSE, show.legend=TRUE,
+plot.max=max(ff[-1]), include.total.variance=FALSE, cukier=TRUE,
+names=paste(sep="", "P", 1:numberf), main="", xlab="frequency",
+ylab="Fourier Coef", pch=rep(0,numberf), col=(1:numberf)+1, reorder=1:numberf, ...){
 if(cukier){
         t.runs= min_runs_cukier75[numberf]
-        t.freq = freq_cukier(numberf)
+        t.freq = freq_cukier(numberf)[reorder]
 } else {
         t.runs <- min_runs_mcrae82[numberf]
-        t.freq <- freq_mcrae82(numberf)
+        t.freq <- freq_mcrae82(numberf)[reorder]
 }
 if(NROW(x)<t.runs){
 cat("x is too short. Expected number of values: ", t.runs,
@@ -23,15 +26,16 @@ ff <- ff[1:(NROW(x)+1)]
 freq <- t.freq %o% 1:order
 
 if(make.plot){
-freqcol= rep(1:numberf,order)+1
-if(plot.max){
- plot(c(1,NROW(ff))-1,c(0,plot.max),t="n", xlab="frequency", ylab="Fourier Coef", main=plot.main)
-} else {
- plot(c(1,NROW(ff))-1,c(0,max(ff[-1])),t="n", xlab="frequency", ylab="Fourier Coef", main=plot.main)
-}
- points((1:NROW(ff))-1,ff)
-points(as.vector(freq), ff[as.vector(1+freq)], col=freqcol)
-legend("topright", inset=0.1, names, pch=1, col=(1:numberf)+1)
+    freqcol= rep(col,order)
+    freqpch= rep(pch,order)
+    plot(c(1,NROW(ff))-1,c(0,plot.max),
+              t="n", xlab=xlab,
+              ylab=ylab, main=main, ...)
+    points(((1:NROW(ff))-1)[-as.vector(freq)],ff[-as.vector(1+freq)])
+    points(as.vector(freq), ff[as.vector(1+freq)], col=freqcol, pch=freqpch)
+    if(show.legend){
+        legend("topright", inset=0.1, names, pch=pch, col=col)
+    }
 }
 
 #Sensitivitaeten berechnen

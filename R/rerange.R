@@ -1,6 +1,6 @@
 `rerange` <-
-function(data,min.goal=0, max.goal=1,min.data=min(data),
-max.data=max(data),center=NA){
+function(data,min.goal=0, max.goal=1,min.data=min(data, na.rm=na.rm),
+max.data=max(data, na.rm=na.rm),center=NA, na.rm=FALSE){
    if(!is.na(center)){
      #split linear transformation
      #the data is split into two segments
