@@ -12,7 +12,7 @@ sa <- function(par, fn, method=c("FAST"), ...,xval=NULL){
 	match.arg(method, several.ok=FALSE)
 	stopifnot(mode(fn)=="function")
       if(method=="FAST"){
-	     paras<-fast_parameters(min=par[,1],max=par[,2])
+	     paras<-fast_parameters(minimum=par[,1],maximum=par[,2])
 	     model_results <- apply(paras, 1, fn, ...)
 	     model_results
 	     if(!is.null(dim(model_results)) & is.null(xval)){

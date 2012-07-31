@@ -1,4 +1,4 @@
-638b313f63f33210d21e486ce8000ab0 *DESCRIPTION
+f0c2070ea113bad2bba1f8741438a732 *DESCRIPTION
 ea5553f4524487ac92fc472fdee81def *NAMESPACE
 1eefa4f8cbf0335ca35dc3ee533e040e *R/S.R
 b96b25da5841f88b9607b3f11685b9e1 *R/double_serie.R
@@ -11,11 +11,11 @@ ba551eb12d229240df9453d2491de529 *R/example_model2.R
 0960e084c26ceaf0cf777c414c6ccac6 *R/p.sensitivity.R
 d393d1acfde11b3e08e2c9daa7aeceb7 *R/rerange.R
 c5ac779bb60792983e7ee5a7a46c9ba8 *R/s_1.R
-a166887edb5ffcc926fb87b707c6ff2f *R/sa.R
+b54b7adc88df6684ad050715f4e396c5 *R/sa.R
 e7efd772cf76d856ed83ead02dbb4ead *R/sens.model1.R
 836fea77fadd03e9e99172778f90c225 *R/sensitivity.R
 a7d321fb67d980490004193caac87db2 *R/sensitivity_rep.R
-0d4def162510f7da355a67e3e9890f73 *R/sysdata.rda
+7efcfda2f0d5a46ea51723223d509821 *R/sysdata.rda
 03e245c53eb3c07e4aea1d13ce3a135d *man/S.Rd
 f98a824e2afe76de4cc00d66946a77f3 *man/double_serie.Rd
 8768533e28674f9d7ce48780a92f99e5 *man/example_model2.Rd
