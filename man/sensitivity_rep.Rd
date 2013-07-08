@@ -6,10 +6,14 @@
   a time series. 
 }
 \usage{
-sensitivity_rep(data, xval, direction, numberf, order=4, legend = paste("P", 1:order, sep = ""), cukier=TRUE, reorder = 1:numberf)
+sensitivity_rep(data.zoo, xval = index(data.zoo), direction=1, 
+		data = coredata(data.zoo), numberf, 
+		order=4, legend = paste("P", 1:order, sep = ""), 
+		cukier=TRUE, reorder = 1:numberf, ...)
 }
 \arguments{
   \item{data}{ Array of data to use of the form todo }
+  \item{data.zoo}{ Zoo object containing data with one row per parameter set}
   \item{xval}{ Vector to use as x data for plotting }
   \item{direction}{ Dimension which contains the todo }
   \item{numberf}{ Number of parameters used  }
@@ -17,6 +21,7 @@ sensitivity_rep(data, xval, direction, numberf, order=4, legend = paste("P", 1:o
   \item{legend}{ legend text to plot }
   \item{cukier}{ boolean. Indicates wheter to use \code{\link{freq_cukier}}}
   \item{reorder}{A vector of indices that allows to use a different order for the parameters. This is important to check effects of the sampling scheme on results. Use the same as for \code{\link{fast_parameters}}}
+  \item{...}{Arguments passed to p.sensitivity}
 }
 \value{
   An array of sensitivities of the form ... 
@@ -37,6 +42,10 @@ model_results <- apply(paras, 1, example_model2)
 model_results
 sensitivity <- sensitivity_rep(data = model_results, xval=1:200, direction = 1, order=4 , numberf=4)
 p.sensitivity(sen=sensitivity, xval=1:200, legend=names(paras))
+
+#Alternatively with zoo object
+result.zoo <- zoo(model_results, order.by=1:200)
+sensitivity <- sensitivity_rep(data.zoo = result.zoo, numberf=4)
 
 }
 \keyword{ utilities }

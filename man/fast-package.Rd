@@ -78,7 +78,7 @@ paras<-fast_parameters(min=c(0,0,0,0),max=c(1,2,2,3))
 paras
 model_results <- apply(paras, 1, example_model2)
 plot(model_results)
-x11()
+dev.new()
 sensitivity <- sensitivity_rep(data = model_results, xval=1:200, direction = 1, order=4 , numberf=4)
 p.sensitivity(sen=sensitivity, xval=1:200, legend=names(paras))
 

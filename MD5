@@ -1,5 +1,5 @@
-f0c2070ea113bad2bba1f8741438a732 *DESCRIPTION
-ea5553f4524487ac92fc472fdee81def *NAMESPACE
+e2bb850afe3e799ea4f1767f71da0090 *DESCRIPTION
+4ea0e770fb283aed4bde6b94ffe97c15 *NAMESPACE
 1eefa4f8cbf0335ca35dc3ee533e040e *R/S.R
 b96b25da5841f88b9607b3f11685b9e1 *R/double_serie.R
 735e6cd47757f3d106f45fddcdde63f3 *R/example_model1.R
@@ -14,13 +14,13 @@ c5ac779bb60792983e7ee5a7a46c9ba8 *R/s_1.R
 b54b7adc88df6684ad050715f4e396c5 *R/sa.R
 e7efd772cf76d856ed83ead02dbb4ead *R/sens.model1.R
 836fea77fadd03e9e99172778f90c225 *R/sensitivity.R
-a7d321fb67d980490004193caac87db2 *R/sensitivity_rep.R
-7efcfda2f0d5a46ea51723223d509821 *R/sysdata.rda
+4285c6e39c710f7c17d281ed9e816394 *R/sensitivity_rep.R
+0d4def162510f7da355a67e3e9890f73 *R/sysdata.rda
 03e245c53eb3c07e4aea1d13ce3a135d *man/S.Rd
 f98a824e2afe76de4cc00d66946a77f3 *man/double_serie.Rd
 8768533e28674f9d7ce48780a92f99e5 *man/example_model2.Rd
-84c591be62e66c61aaea238b958dfc0e *man/fast-package.Rd
-2aa35e76b95cbbfb2db826e7cf01bb2d *man/fast_parameters.Rd
+5e939dd2c561037435b2cfc92fd7def6 *man/fast-package.Rd
+4fe91903b9fc9f3578c618d20930cd3c *man/fast_parameters.Rd
 9c3f7ea3c464a721e74b641f310b8619 *man/freq_cukier.Rd
 e58f4eb3a7cceae672f2c9b9e470d79f *man/na2mean.Rd
 7c1fa9bb2562e4c826ca60439c0e7ffc *man/p.sensitivity.Rd
@@ -28,4 +28,4 @@ dc37f2b8b26154daea76d5ddc5168c99 *man/rerange.Rd
 a7ae24de645703eea784aab5a4c73abf *man/s_1.Rd
 435e5b51e305f34ecf6a0effb21c71a7 *man/sa.Rd
 b4e0348bc3a1487897045a8e8c6703be *man/sensitivity.Rd
-7f04bc7eaf211b75df92bd9290084312 *man/sensitivity_rep.Rd
+dbcb115994d966e7901dc372d782cc94 *man/sensitivity_rep.Rd

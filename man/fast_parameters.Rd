@@ -7,7 +7,8 @@
   This function generates an array of parameters for the FAST method. 
 }
 \usage{
-fast_parameters(minimum, maximum, names=paste(sep="", "P", 1:n),factor=1,logscale=rep(FALSE, n), cukier=TRUE, reorder=1:n)
+fast_parameters(minimum, maximum, names=paste(sep="", "P", 1:n),
+	factor=1,logscale=rep(FALSE, n), cukier=TRUE, reorder=1:n)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
