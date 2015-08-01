@@ -42,9 +42,9 @@ if(make.plot){
 sens<-function(frequency){
 sum((ff[drop(frequency)])^2, na.rm=TRUE)
 }
-# Sensitivitäten für Frequenzen berechnen
+# Sensitivitaeten fuer Frequenzen berechnen
 # Zu beachten, dass fft[1] dem A0 entspricht
-# und nicht der Frequenz 1. Für Total auch A0 wegnehmen?
+# und nicht der Frequenz 1. Fuer Total auch A0 wegnehmen?
 
 total<-sum(ff[-1]^2)
 #browser()

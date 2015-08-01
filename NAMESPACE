@@ -5,3 +5,5 @@
 exportPattern(".")
 
 import(zoo)
+importFrom("graphics", "abline", "legend", "lines", "plot", "points")
+importFrom("stats", "fft", "lowess")
